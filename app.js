@@ -2,16 +2,23 @@
 // const convertPrice = parseInt(price);
 
 // const cartCount = document.getElementById("cart").innerText;
-// const convertCartCount = parseInt(cart); 
+// const convertCartCount = parseInt(cartCount); 
 
-// const leftCount = document.getElementById("cart").innerText;
-// const convertLeftCount = parseInt(cart); 
+// const leftCount = document.getElementById("left").innerText;
+// const convertLeftCount = parseInt(leftCount); 
 
 
-const price = getConvertedValue("budget");
-const cartCount = getConvertedValue("cart");
-const leftCount = getConvertedValue("left")
+// const price = getConvertedValue("budget");
+// const cartCount = getConvertedValue("cart");
+// const leftCount = getConvertedValue("left")
 
+const allBtn = document.getElementsByClassName("add-btn");
+
+for (const btn of allBtn) {
+    btn.addEventListener("click", function(event){
+console.log(event)
+    })
+}
 
 
 function getConvertedValue(id) {
