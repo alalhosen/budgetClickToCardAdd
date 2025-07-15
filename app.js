@@ -33,7 +33,7 @@ p3.innerText = category;
 div.appendChild(p1);
 div.appendChild(p2);
 div.appendChild(p3);
-selectedContainer.appendChild(div)
+selectedContainer.appendChild(div);
 
     });
 }
