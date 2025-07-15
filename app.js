@@ -20,8 +20,11 @@ const name = event.target.parentNode.childNodes[1].innerText;
 const price = event.target.parentNode.childNodes[3].childNodes[1].innerText;
 const category = event.target.parentNode.childNodes[5].childNodes[1].innerText;
 
-console.log(event.target.parentNode.childNodes[5].childNodes[1].innerText)
-    })
+const selectedContainer = document.getElementById("selected-players-container");
+const div = document.createElement("div");
+
+
+    });
 }
 
 
