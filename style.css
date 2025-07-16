@@ -1,10 +1,16 @@
-.player-btn{
+
+.player-btn {
     box-shadow: 4px 4px 8px gray;
     border: none;
 }
-.player-container{
+.player-container {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.selected-player{
+    display: flex;
     justify-content: space-around;
 }
