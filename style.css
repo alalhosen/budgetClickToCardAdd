@@ -1,3 +1,10 @@
 .player-btn{
-    padding: 24px;
+    box-shadow: 4px 4px 8px gray;
+    border: none;
+}
+.player-container{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
