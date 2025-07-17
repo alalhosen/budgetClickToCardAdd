@@ -40,14 +40,27 @@ for (const btn of allBtn) {
     selectedContainer.appendChild(div);
 
     updateTotalCost(price);
+    updateGrandTotal();
   });
 }
 
-function updateTotalCost(value) {
+function updateGrandTotal() {
   const totalCost = getConvertedValue("total-cost");
-  const sum = totalCost + parseInt(value);
+  document.getElementById("grand-total").innerText = totalCost;
+}
+
+function updateTotalCost(price) {
+  const totalCost = getConvertedValue("total-cost");
+  const convertedPrice = parseInt(price);
+  const sum = totalCost + convertedPrice;
   document.getElementById("total-cost").innerText = sum;
 }
+
+// function updateTotalCost(value) {
+//   const totalCost = getConvertedValue("total-cost");
+//   const sum = totalCost + parseInt(value);
+//   document.getElementById("total-cost").innerText = sum;
+// }
 
 function getConvertedValue(id) {
   const price = document.getElementById(id).innerText;
