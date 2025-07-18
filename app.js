@@ -44,7 +44,7 @@ for (const btn of allBtn) {
   });
 }
 
-function updateGrandTotal() {
+function updateGrandTotal(status) {
   const totalCost = getConvertedValue("total-cost");
   document.getElementById("grand-total").innerText = totalCost;
 }
