@@ -45,8 +45,13 @@ for (const btn of allBtn) {
 }
 
 function updateGrandTotal(status) {
+  if(status) {
+    console.log("acheeee");
+  }else {
+    console.log("undefine chilo")
+  }
 
-  
+
   const totalCost = getConvertedValue("total-cost");
   document.getElementById("grand-total").innerText = totalCost;
 }
