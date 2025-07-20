@@ -45,12 +45,11 @@ for (const btn of allBtn) {
 }
 
 function updateGrandTotal(status) {
-  if (status) {
-    console.log("acheeee");
-  } else {
-    const totalCost = getConvertedValue("total-cost");
-    document.getElementById("grand-total").innerText = totalCost;
-  }
+
+
+
+  const totalCost = getConvertedValue("total-cost");
+  document.getElementById("grand-total").innerText = totalCost;
 }
 
 function updateTotalCost(price) {
@@ -73,3 +72,9 @@ function getConvertedValue(id) {
 }
 
 // getConvertedValue("budget")
+
+function checkParameter (status) {
+  console.log(status)
+}
+
+checkParameter("trs")
