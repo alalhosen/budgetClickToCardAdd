@@ -74,7 +74,9 @@ function getConvertedValue(id) {
 // getConvertedValue("budget")
 
 function checkParameter (status) {
-  console.log(status)
+  if (status==undefined){
+    console.log("kichu dei nai")
+  }
 }
 
 checkParameter("trs")
