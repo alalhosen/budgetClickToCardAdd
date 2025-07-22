@@ -75,8 +75,11 @@ function getConvertedValue(id) {
 
 function checkParameter (status) {
   if (status==undefined){
-    console.log("kichu dei nai")
+    console.log("kichu dei nai");
+  }
+  else{
+    console.log("parameter acche");
   }
 }
 
-checkParameter("trs")
+checkParameter()
