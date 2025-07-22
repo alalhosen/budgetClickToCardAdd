@@ -45,11 +45,11 @@ for (const btn of allBtn) {
 }
 
 function updateGrandTotal(status) {
+  if (status == undefined) {
+    const totalCost = getConvertedValue("total-cost");
 
-
-
-  const totalCost = getConvertedValue("total-cost");
-  document.getElementById("grand-total").innerText = totalCost;
+    document.getElementById("grand-total").innerText = totalCost;
+  }
 }
 
 function updateTotalCost(price) {
@@ -73,13 +73,12 @@ function getConvertedValue(id) {
 
 // getConvertedValue("budget")
 
-function checkParameter (status) {
-  if (status==undefined){
+function checkParameter(status) {
+  if (status == undefined) {
     console.log("kichu dei nai");
-  }
-  else{
+  } else {
     console.log("parameter acche");
   }
 }
 
-checkParameter()
+checkParameter();
