@@ -45,10 +45,17 @@ for (const btn of allBtn) {
 }
 
 function updateGrandTotal(status) {
+  const totalCost = getConvertedValue("total-cost");
   if (status == undefined) {
-    const totalCost = getConvertedValue("total-cost");
 
     document.getElementById("grand-total").innerText = totalCost;
+  } else {
+    const couponCode = document.getElementById("coupon-code").value;
+
+    if (couponCode == "love420") {
+    } else {
+      alert("Please enter valid coupon code");
+    }
   }
 }
 
