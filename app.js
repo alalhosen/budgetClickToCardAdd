@@ -24,6 +24,13 @@ for (const btn of allBtn) {
       "selected-players-container"
     );
 
+
+// update budget
+const budget = getConvertedValue("budget")
+
+
+
+
     const div = document.createElement("div");
     div.classList.add("selected-player");
 
