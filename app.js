@@ -53,6 +53,8 @@ function updateGrandTotal(status) {
     const couponCode = document.getElementById("coupon-code").value;
 
     if (couponCode == "love420") {
+      const discounted = totalCost * .2;
+      document.getElementById("grand-total").innerText = totalCost - discounted;
     } else {
       alert("Please enter valid coupon code");
     }
