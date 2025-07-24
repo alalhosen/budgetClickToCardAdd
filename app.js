@@ -32,6 +32,10 @@ document.getElementById("budget").innerText = budget - parseInt(price)
 // cartCount update
 const cart = getConvertedValue ("cart");
 document.getElementById("cart").innerText = cart + 1;
+ 
+// leftCout update
+const left = getConvertedValue ("left");
+document.getElementById("left").innerText = left - 1;
 
 
     const div = document.createElement("div");
