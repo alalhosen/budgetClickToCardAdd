@@ -24,19 +24,29 @@ for (const btn of allBtn) {
       "selected-players-container"
     );
 
+event.target.setAttribute("disabled", false);
 
-// update budget
-const budget = getConvertedValue("budget");
-document.getElementById("budget").innerText = budget - parseInt(price)
 
-// cartCount update
-const cart = getConvertedValue ("cart");
-document.getElementById("cart").innerText = cart + 1;
- 
-// leftCout update
-const left = getConvertedValue ("left");
-document.getElementById("left").innerText = left - 1;
+    const firstCartCount = getConvertedValue("cart");
+    if (firstCartCount + 1 > 6) {
+      alert("limit ses r hobe na");
+      return;
+    }
 
+    // update budget
+    const budget = getConvertedValue("budget");
+    document.getElementById("budget").innerText = budget - parseInt(price);
+
+    // cartCount update
+    const cart = getConvertedValue("cart");
+    document.getElementById("cart").innerText = cart + 1;
+
+    // leftCout update
+    const left = getConvertedValue("left");
+    document.getElementById("left").innerText = left - 1;
+
+    // const secondCartCount = getConvertedValue("cart");
+    // console.log(secondCartCount);
 
     const div = document.createElement("div");
     div.classList.add("selected-player");
@@ -61,13 +71,12 @@ document.getElementById("left").innerText = left - 1;
 function updateGrandTotal(status) {
   const totalCost = getConvertedValue("total-cost");
   if (status == undefined) {
-
     document.getElementById("grand-total").innerText = totalCost;
   } else {
     const couponCode = document.getElementById("coupon-code").value;
 
     if (couponCode == "love420") {
-      const discounted = totalCost * .2;
+      const discounted = totalCost * 0.2;
       document.getElementById("grand-total").innerText = totalCost - discounted;
     } else {
       alert("Please enter valid coupon code");
