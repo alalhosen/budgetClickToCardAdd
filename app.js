@@ -26,9 +26,12 @@ for (const btn of allBtn) {
 
 
 // update budget
-const budget = getConvertedValue("budget")
+const budget = getConvertedValue("budget");
+document.getElementById("budget").innerText = budget - parseInt(price)
 
-
+// cartCount update
+const cart = getConvertedValue ("cart");
+document.getElementById("cart").innerText = cart + 1;
 
 
     const div = document.createElement("div");
