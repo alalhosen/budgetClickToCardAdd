@@ -24,9 +24,8 @@ for (const btn of allBtn) {
       "selected-players-container"
     );
 
-event.target.setAttribute("disabled", false);
-event.target.parentNode.style.backgroundColor = "lightgray";
-
+    event.target.setAttribute("disabled", false);
+    event.target.parentNode.style.backgroundColor = "lightgray";
 
     const firstCartCount = getConvertedValue("cart");
     if (firstCartCount + 1 > 6) {
