@@ -25,7 +25,7 @@ for (const btn of allBtn) {
     );
 
 event.target.setAttribute("disabled", false);
-event.target.parentNode.style.backgroundColor = "gray";
+event.target.parentNode.style.backgroundColor = "lightgray";
 
 
     const firstCartCount = getConvertedValue("cart");
