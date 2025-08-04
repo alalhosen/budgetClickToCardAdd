@@ -14,3 +14,11 @@
     display: flex;
     justify-content: space-around;
 }
+.hero{
+    border: 2px;
+    border: solid;
+    /* align-items: center; */
+    text-align: center;
+    justify-content: center;
+    /* justify-items: center; */
+}
