@@ -15,10 +15,11 @@
     justify-content: space-around;
 }
 .hero{
+    background: beige;
     border: 2px;
     border: solid;
     /* align-items: center; */
     text-align: center;
-    justify-content: center;
-    justify-items: center;
+    /* justify-content: center; */
+    /* justify-items: center; */
 }
