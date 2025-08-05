@@ -16,8 +16,9 @@
 }
 .hero{
     background: beige;
-    border: 2px;
-    border: solid;
+    padding: 16px;
+    /* border: 2px; */
+    /* border: solid; */
     /* align-items: center; */
     text-align: center;
     /* justify-content: center; */
