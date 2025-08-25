@@ -1,3 +1,18 @@
+.hero{
+    /* border: 2px; */
+    /* border: solid; */
+    padding: 16px;
+    text-align: center;
+    
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+}
+.card2{
+    justify-items: end;
+    /* justify-content: end; */
+    text-align: end;
+}
 
 .player-btn {
     box-shadow: 4px 4px 8px gray;
@@ -13,21 +28,6 @@
 .selected-player{
     display: flex;
     justify-content: space-around;
-}
-.hero{
-    /* border: 2px; */
-    /* border: solid; */
-    padding: 16px;
-    text-align: center;
-    
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* justify-items: center; */
-}
-.card2{
-    justify-items: end;
-    /* justify-content: end; */
-    text-align: end;
 }
 .players-list{
     text-align: center;
