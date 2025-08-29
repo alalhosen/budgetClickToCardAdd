@@ -10,32 +10,27 @@
 
 <body class="body-container">
 
-    <div class="navbar bg-base-100 flex shadow-sm">
-        <div class="flex-1">
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+    <!------------ Navbar section ------------->
+    <navbar class="flex bg-gray-200 w-full py-8 justify-around rounded-lg text-xl">
+        <div class="btn btn-ghost text-4xl font-extrabold">
+            <h2>DaisyUi</h2>
         </div>
-        <div class="flex gap-2">
-            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-            <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
-                        <img alt="Tailwind CSS Navbar component"
-                            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-                    </div>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li>
-                        <a class="justify-between">
-                            Profile
-                            <span class="badge">New</span>
-                        </a>
-                    </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
-                </ul>
+        <ul class="flex">
+            <li class="ml-6 bg-yellow-50 p-4 rounded-2xl px-8">Profile</li>
+            <li class="ml-6 bg-yellow-50 p-4 rounded-2xl px-8"><a>Settings</a></li>
+            <li class="ml-6 bg-yellow-50 p-4 rounded-2xl px-8"><a>Logout</a></li>
+        </ul>
+
+
+        <div tabindex="0" role="button" class="btn flex btn-ghost btn-circle avatar">
+            <input class="pl-4 rounded-full" type="text" placeholder="Search">
+            <div class="w-16">
+                <img alt="" class="rounded-full ml-8"
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
             </div>
         </div>
-    </div>
+
+    </navbar>
 
 
     <!-- Carousel slider section 1 -->
